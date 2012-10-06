@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+		<title>電子調查問卷</title>
+
+		<script type="text/javascript" src="underscore.js"></script>
+		<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
+</head>
+	<body>
+		<div class="row">
+
+<div class="navbar">
+	  <div class="navbar-inner">
+	  	<div class="span12">
+	    <a class="brand" href="#">止痛藥物使用紀錄單</a>
+	    </div>
+	    <ul class="nav">
+	    </ul>
+	  </div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid">
+
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+		<div class="well well-large" style="padding: 12px 0; margin-bottom: 0;">
+			<ul class="nav nav-list">
+	  		<li class="nav-header">資料選單</li>
+	  		<li><a href="index.html">癌症疼痛病患基本資料表</a></li>
+			<li class="active"><a href="anodyne.html">止痛藥物使用紀錄單</a></li>
+			<li><a href="#">癌症疼痛處理品質指標</a></li>
+	  		</ul>
+        </div>
+
+    </div>
+    <div class="span10">
+      <!--Body content-->
+
+
+<script type="text/javascript">
+function addRow(idd)
+  {
+
+	 var select = document.getElementById(idd.id)
+	 
+	 var select_id = idd.id + _.uniqueId();
+
+
+
+     var root = document.getElementById("tbody")
+     var allRows = root.getElementsByTagName('tr');
+     var allCells = allRows[0].getElementsByTagName('td');
+
+     var newRow = root.insertRow();
+
+     var newCell1 = newRow.insertCell();
+     var newCell2 = newRow.insertCell();
+     var newCell3 = newRow.insertCell();
+     var newCell4 = newRow.insertCell();
+     var newCell5 = newRow.insertCell();
+     var newCell6 = newRow.insertCell();
+
+     newCell1.innerHTML = allCells[5].innerHTML;
+     newCell2.innerHTML = allCells[4].innerHTML;
+     newCell3.innerHTML = allCells[3].innerHTML;
+     newCell4.innerHTML = allCells[2].innerHTML;
+     newCell5.innerHTML = allCells[1].innerHTML;
+     newCell6.innerHTML = allCells[0].innerHTML;
+
+     select.id = select_id;
+     alert(select.id);
+  }
+</script>
+
+<table class="table table-hover" id ="tbody">
+			<!--表單-->
+  <tr>
+
+    <td>
+    	<select id ="select" onchange = "addRow(this)">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+    </td>
+    <td>td2</td>
+    <td>td3</td>
+    <td>td4</td>
+    <td>td5</td>
+    <td>td6</td>
+
+  </tr>
+
+
+</table>
+
+<button class="btn btn-danger btn-primary" type="button" onclick = "">確認提交</button>
+
+  	</div>
+	</div>
+
+	</body>
+
+</html>
