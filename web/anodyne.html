@@ -36,7 +36,7 @@
 	  		<li class="nav-header">資料選單</li>
 	  		<li><a href="index.html">癌症疼痛病患基本資料表</a></li>
 			<li class="active"><a href="anodyne.html">止痛藥物使用紀錄單</a></li>
-			<li><a href="#">癌症疼痛處理品質指標</a></li>
+			<li><a href="Pain_indicators.html">癌症疼痛處理品質指標</a></li>
 	  		</ul>
         </div>
 
@@ -53,8 +53,7 @@ function addRow(idd)
 	 
 	 var select_id = idd.id + _.uniqueId();
 
-
-
+ 
      var root = document.getElementById("tbody")
      var allRows = root.getElementsByTagName('tr');
      var allCells = allRows[0].getElementsByTagName('td');
@@ -85,7 +84,8 @@ function addRow(idd)
   <tr>
 
     <td>
-    	<select id ="select" onchange = "addRow(this)">
+      非麻醉性止痛藥品
+    	<select class="input-small" id ="select" onchange = "addRow(this)">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -93,11 +93,11 @@ function addRow(idd)
           <option>5</option>
         </select>
     </td>
-    <td>td2</td>
-    <td>td3</td>
-    <td>td4</td>
-    <td>td5</td>
-    <td>td6</td>
+    <td>開始日期</td>
+    <td>結束日期</td>
+    <td>劑量</td>
+    <td>途徑</td>
+    <td>間隔時間</td>
 
   </tr>
 
