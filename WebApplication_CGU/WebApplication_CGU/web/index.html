@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" http-equiv="Content-Type" />
+		<title>電子調查問卷</title>
+
+		<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+</head>
+
+	<body>
+	
+<div class="row">
+	<div class="navbar">
+	  <div class="navbar-inner">
+	  	<div class="span12">
+	    <a class="brand" href="#">癌症疼痛病患基本資料表</a>
+	    </div>
+	    <ul class="nav">
+	    </ul>
+	  </div>
+	</div>
+</div>
+
+<div class="container-fluid">
+
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+		<div class="well well-large" style="padding: 12px 0; margin-bottom: 0;">
+			<ul class="nav nav-list">
+	  		<li class="nav-header">資料選單</li>
+	  		<li class="active"><a href="index.html">癌症疼痛病患基本資料表</a></li>
+			<li><a href="anodyne.html">止痛藥物使用紀錄單</a></li>
+			<li><a href="Pain_indicators.html">癌症疼痛處理品質指標</a></li>
+	  		</ul>
+        </div>
+
+    </div>
+
+    <div class="span10">
+      <!--Body content-->
+
+<table class="table table-hover">
+		<!--表單-->
+<form action="WebForm1.aspx" method="post" id="form1" name="form1">
+
+<thead>
+<tr>
+<td nowrap>一、人口學特性</td>
+</tr>
+</thead>
+
+
+<tr>
+    <td nowrap>性別</td>
+    <td>
+    	<label class="radio inline">
+  			<input type="radio" name="radio_sex" value="radio1" checked>男
+		</label>
+		<label class="radio inline">
+			<input type="radio" name="radio_sex" value="radio2">女
+		</label>
+    </td>
+</tr>
+
+
+<tr>
+    <td nowrap>出生年月日</td>
+    <td>
+		<div class="input-prepend input-append">
+  			<span class="add-on">民國</span>
+  			<input class="span2" name="Birthday_year" id="appendedPrependedInput" size="16" type="text">
+  			<span class="add-on">年</span>
+  			<input class="span2" name="Birthday_month" id="appendedPrependedInput" size="16" type="text">
+  			<span class="add-on">月</span>
+  			<input class="span2" name="Birthday_day" id="appendedPrependedInput" size="16" type="text">
+  			<span class="add-on">日</span>
+		</div>   
+    </td>
+</tr>
+
+
+<tr>
+    <td nowrap>年齡</td>
+    <td>
+		<div class="input-prepend input-append">
+
+  			<input class="span2" name="Age" size="16" type="text">
+  			<span class="add-on">歲</span>
+
+		</div>   
+    </td>
+</tr>
+
+<tr>
+    <td nowrap>教育程度</td>
+
+</tr>
+
+
+<tr>
+    <td nowrap>KPS*(單位:%)</td>
+	<td><input class="span2" name="KPS" size="16" type="text"></td>
+</tr>
+
+<tr>
+    <td nowrap>癌症診斷</td>
+	<td><input class="span2" name="Cancer_diagnosis" size="16" type="text"></td>
+</tr>
+
+<tr>
+    <td nowrap>癌症診斷日期</td>
+	    <td>
+		<div class="input-prepend input-append">
+  			<span class="add-on">民國</span>
+  			<input class="span2" name="Cancer_diagnosis_year" size="16" type="text">
+  			<span class="add-on">年</span>
+  			<input class="span2" name="Cancer_diagnosis_month" size="16" type="text">
+  			<span class="add-on">月</span>
+  			<input class="span2" name="Cancer_diagnosis_day" size="16" type="text">
+  			<span class="add-on">日</span>
+		</div>   
+    </td>
+</tr>
+
+<tr>
+    <td nowrap>疾病期別</td>
+	<td><input class="span2" name="Stage_of_disease" size="16" type="text"></td>
+</tr>
+
+<tr>
+    <td nowrap>是否能表達其疼痛程度</td>
+    <td>
+    	<label class="radio inline">
+  			<input type="radio" name="radio_Pain" value="radio1" checked>是
+		</label>
+		<label class="radio inline">
+			<input type="radio" name="radio_Pain" value="radio2">否
+		</label>
+	</td>
+</tr>
+
+<tr>
+    <td nowrap>最後一次住院有無疼痛</td>
+    <td>
+    	<label class="radio inline">
+  			<input type="radio" name="radio_Pain_Hospitalized" value="radio1" checked>有
+		</label>
+		<label class="radio inline">
+			<input type="radio" name="radio_Pain_Hospitalized" value="radio2">無
+		</label>
+	</td>
+</tr>
+
+<tr>
+    <td nowrap>最後一次住院有無接受抗癌治療</td>
+    <td>
+    	<label class="radio inline">
+  			<input type="radio" name="radio_Anti_cancer_treatment" value="radio1" checked>有
+	  			<div class="input-prepend input-append">
+	  			<span class="add-on">民國</span>
+	  			<input class="span2" name="radio_Anti_cancer_treatment_year" size="16" type="text">
+	  			<span class="add-on">年</span>
+	  			<input class="span2" name="radio_Anti_cancer_treatment_month" size="16" type="text">
+	  			<span class="add-on">月</span>
+	  			<input class="span2" name="radio_Anti_cancer_treatment_day" size="16" type="text">
+	  			<span class="add-on">日</span>
+				</div>   
+		</label>
+		<label class="radio inline">
+			<input type="radio" name="radio_Anti_cancer_treatment" value="radio2">無
+		</label>
+	</td>
+</tr>
+
+<tr>
+    <td nowrap>共病症</td>
+	<td><input class="span2" name="Comorbid_conditions" size="16" type="text"></td>
+</tr>
+
+<thead>
+<tr>
+<td nowrap>二、非安寧組</td>
+</tr>
+</thead>
+
+
+<tr>
+    <td nowrap>住院單位</td>
+	<td><input class="span2" name="Inpatient_unit" size="16" type="text"></td>
+</tr>
+
+<tr>
+    <td nowrap>住院原因</td>
+	<td><input class="span2" name="Cause_of_hospitalization" size="16" type="text"></td>
+</tr>
+
+<tr>
+    <td nowrap>住院時間</td>
+    <td>
+		<div class="input-prepend input-append">
+  			<span class="add-on">民國</span>
+  			<input class="span2" name="Hospital_stay_year_Before" size="16" type="text">
+  			<span class="add-on">年</span>
+  			<input class="span2" name="Hospital_stay_month_Before" size="16" type="text">
+  			<span class="add-on">月</span>
+  			<input class="span2" name="Hospital_stay_day_Before" size="16" type="text">
+  			<span class="add-on">日到民國</span>
+  			<input class="span2" name="Hospital_stay_year_After" size="16" type="text">
+  			<span class="add-on">年</span>
+  			<input class="span2" name="Hospital_stay_month_After" size="16" type="text">
+  			<span class="add-on">月</span>
+  			<input class="span2" name="Hospital_stay_day_After" size="16" type="text">
+  			<span class="add-on">日</span>
+		</div>   
+    </td>
+</tr>
+
+
+
+<thead>
+<tr>
+<td nowrap>三、安寧組</td>
+</tr>
+</thead>
+
+
+<tr>
+    <td nowrap>轉介至安寧照護原因</td>
+	<td><input class="span2" id="appendedPrependedInput" size="16" type="text"></td>
+</tr>
+
+<tr>
+    <td nowrap>安寧療護形式</td>
+    <td>
+    	<label class="radio inline">
+  			<input type="radio" name="Hospice_care_reasons" value="radio1" checked>入住安寧病房
+		</label>
+		<label class="radio inline">
+			<input type="radio" name="Hospice_care_reasons" value="radio2">安寧共同照護
+		</label>
+	</td>
+</tr>
+
+
+<tr>
+    <td nowrap>接受安寧療護時間</td>
+    <td>
+		<div class="input-prepend input-append">
+  			<span class="add-on">民國</span>
+  			<input class="span2" name="Accept_hospice_time_year_Before" size="16" type="text">
+  			<span class="add-on">年</span>
+  			<input class="span2" name="Accept_hospice_time_month_Before" size="16" type="text">
+  			<span class="add-on">月</span>
+  			<input class="span2" name="Accept_hospice_time_day_Before" size="16" type="text">
+  			<span class="add-on">日到民國</span>
+  			<input class="span2" name="Accept_hospice_time_year_After" size="16" type="text">
+  			<span class="add-on">年</span>
+  			<input class="span2" name="Accept_hospice_time_month_After" size="16" type="text">
+  			<span class="add-on">月</span>
+  			<input class="span2" name="Accept_hospice_time_day_After" size="16" type="text">
+  			<span class="add-on">日</span>
+		</div>   
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+<button class="btn btn-danger btn-primary" type="button" onClick="$('#form1').submit();">確認提交</button>
+
+
+
+  	</div>
+	</div>
+
+	</body>
+
+</html>
