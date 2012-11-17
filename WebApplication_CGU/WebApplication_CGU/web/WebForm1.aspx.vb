@@ -8,9 +8,6 @@ Public Class WebForm1
 
         get_html5()
 
-
-        Response.Write(Request.Params("action") + Request.Params("t"))
-
         If Request.Params("action") = "select" Then
             Response.AddHeader("Content-Type", "application/json")
             Response.Write(database_read(Request.Params("t")))
@@ -79,7 +76,6 @@ Public Class WebForm1
 
 
         'Response.Write("check: " + radio_sex + Birthday_year + Birthday_month + Birthday_day & "<br />")
-        Return vbNull
 
     End Function
 
@@ -92,7 +88,7 @@ Public Class WebForm1
         conn.Open()
 
         'read
-        Dim SQLCommand As String = "select * from degree"
+        Dim SQLCommand As String = "select * from " + table
         Dim da As OleDbDataAdapter = New OleDbDataAdapter(SQLCommand, conn)
         Dim ds As New DataSet
         da.Fill(ds, table)
@@ -105,7 +101,7 @@ Public Class WebForm1
 
         conn.Close()
 
-        Return "{""option"":[""" + String.Join(""",""", resp) + """]}"
+        Return "{""id"": """ + table + """, ""option"":[""" + String.Join(""",""", resp) + """]}"
     End Function
 
     Protected Sub database_Write(ByVal table1 As String)

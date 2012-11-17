@@ -8,18 +8,35 @@
 		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+        <script>
+            window.addEventListener("load", onload);
+            function onload() {
+                var objs = document.getElementsByTagName("select");
+                for (var i = 0; i < objs.length; i++) {
+                    if(typeof(objs[i])=="object") {
+                        var objId = objs[i].id;
+                        //console.log("Load: " + objId);
+                        jQuery(document).ready(function g() { $.ajax({ url: "WebForm1.aspx?action=select&t=" + objId, type: "post" }).done(getSelect) })
+                    }
+                }
+            }
+            function getSelect(data) {
+                //console.log("Loaded: " + data.id);
+                var obj = document.getElementById(data.id);
+                var opt = data.option;
+                for (var i = 0; i < opt.length; i++) 
+                {
+                    var optiondata = opt[i].trim().replace("（", "(").replace("）", ")");
+                    if (optiondata.length > 0) {
+                        obj.add(new Option(optiondata, i))
+                    }
+                }
+            }
+        </script>
 </head>
 
 	<body>
 	
-    <script>
-        window.onload = get;
-        function get() {
-            $.ajax({ url: "http://localhost:63183/web/WebForm1.aspx?action=select&t=unit", type: "post" });
-        }
-    </script>
-
-
 <div class="row">
 	<div class="navbar">
 	  <div class="navbar-inner">
@@ -105,7 +122,15 @@
 
 <tr>
     <td nowrap>教育程度</td>
-
+    <td>
+        <select class="input-small" id="degree"></select>
+        <select class="input-small" id="freq"></select>
+        <select class="input-small" id="icd9"></select>
+        <select class="input-small" id="reason"></select>
+        <select class="input-small" id="route"></select>
+        <select class="input-small" id="stage"></select>
+        <select class="input-small" id="unit"></select>
+     </td>
 </tr>
 
 
