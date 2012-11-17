@@ -8,13 +8,16 @@ Public Class WebForm1
 
         get_html5()
 
-        'If Request.Params("action") = "select" Then
-        '    Response.AddHeader("Content-Type", "application/json")
-        '    Response.Write(database_read(Request.Params("t")))
-        '    Response.End()
-        'Else
 
-        'End If
+        Response.Write(Request.Params("action") + Request.Params("t"))
+
+        If Request.Params("action") = "select" Then
+            Response.AddHeader("Content-Type", "application/json")
+            Response.Write(database_read(Request.Params("t")))
+            Response.End()
+        Else
+
+        End If
 
 
     End Sub
@@ -76,6 +79,7 @@ Public Class WebForm1
 
 
         'Response.Write("check: " + radio_sex + Birthday_year + Birthday_month + Birthday_day & "<br />")
+        Return vbNull
 
     End Function
 

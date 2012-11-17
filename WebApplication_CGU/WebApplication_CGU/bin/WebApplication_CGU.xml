@@ -6,7 +6,15 @@ WebApplication_CGU
 </name>
 </assembly>
 <members>
-<member name="P:WebApplication_CGU.My.MyWebExtension.Application">
+<member name="F:WebApplication_CGU.WebForm1.form1">
+	<summary>
+form1 控制項。
+</summary>
+	<remarks>
+自動產生的欄位。
+將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+</remarks>
+</member><member name="P:WebApplication_CGU.My.MyWebExtension.Application">
 	<summary>
  傳回有關目前應用程式的資訊。
  </summary>
@@ -39,14 +47,6 @@ WebApplication_CGU
  用來定義可用於 Web 專案 My 命名空間中之屬性的模組。
  </summary>
 	<remarks></remarks>
-</member><member name="F:WebApplication_CGU.WebForm1.form1">
-	<summary>
-form1 控制項。
-</summary>
-	<remarks>
-自動產生的欄位。
-將移動欄位宣告從設計檔案修改為程式碼後置檔案。
-</remarks>
 </member>
 </members>
 </doc>

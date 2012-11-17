@@ -12,6 +12,14 @@
 
 	<body>
 	
+    <script>
+        window.onload = get;
+        function get() {
+            $.ajax({ url: "http://localhost:63183/web/WebForm1.aspx?action=select&t=unit", type: "post" });
+        }
+    </script>
+
+
 <div class="row">
 	<div class="navbar">
 	  <div class="navbar-inner">

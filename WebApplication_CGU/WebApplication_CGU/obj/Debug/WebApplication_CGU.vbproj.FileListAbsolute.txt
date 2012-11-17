@@ -8,3 +8,13 @@ C:\Users\USER\Documents\Visual Studio 2010\Projects\WebApplication_CGU\WebApplic
 C:\Users\USER\Documents\Visual Studio 2010\Projects\WebApplication_CGU\WebApplication_CGU\obj\Debug\WebApplication_CGU.dll
 C:\Users\USER\Documents\Visual Studio 2010\Projects\WebApplication_CGU\WebApplication_CGU\obj\Debug\WebApplication_CGU.xml
 C:\Users\USER\Documents\Visual Studio 2010\Projects\WebApplication_CGU\WebApplication_CGU\obj\Debug\WebApplication_CGU.pdb
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\bin\WebApplication_CGU.dll
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\bin\WebApplication_CGU.pdb
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\bin\WebApplication_CGU.xml
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\obj\Debug\WebApplication_CGU.Resources.resources
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\obj\Debug\WebApplication_CGU.dll
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\obj\Debug\WebApplication_CGU.xml
+C:\Users\USER\Documents\GitHub\Cancer-pain-patients-electronic-case\WebApplication_CGU\WebApplication_CGU\obj\Debug\WebApplication_CGU.pdb
